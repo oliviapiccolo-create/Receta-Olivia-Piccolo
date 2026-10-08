@@ -10,7 +10,7 @@ body {
     background-color: #f4f4f4;
 }
 
-header, nav, main, aside, footer {
+header, nav, main, footer {
     padding: 20px;
     margin: 10px;
     background: white;
@@ -42,10 +42,6 @@ main {
     width: calc(80% - 20px); /* Resto 20px para que no colapse por el margin-left y margin-rigth */
 }
 
-aside {
-    width: calc(20% - 20px); /* Resto 20px para que no colapse por el margin-left y margin-rigth */
-    background: #ddd;
-}
 
 section {
     display: flex;
