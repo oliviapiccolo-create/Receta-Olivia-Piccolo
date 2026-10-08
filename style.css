@@ -1,4 +1,4 @@
-{
+*{
     box-sizing: border-box;
 }
 
@@ -10,7 +10,7 @@ body {
     background-color: #f4f4f4;
 }
 
-header, nav, main, footer {
+header, nav, main, aside, footer {
     padding: 20px;
     margin: 10px;
     background: white;
@@ -18,10 +18,34 @@ header, nav, main, footer {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+main, aside{
+    float: left;
+}
+
 main {
     width: calc(80% - 20px); /* Resto 20px para que no colapse por el margin-left y margin-rigth */
 }
 
+aside {
+    width: calc(20% - 20px); /* Resto 20px para que no colapse por el margin-left y margin-rigth */
+    background: #ddd;
+}
 
 section {
     display: flex;
@@ -34,10 +58,18 @@ article {
     margin-bottom: 10px;
 }
 
-img{size: 20cm;}
+article img {
+    width: 300px;
+    height: 300px;
+}
 
 footer {
     text-align: center;
     font-size: 0.9em;
     color: #555;
+}
+
+header img{
+    width: 50px;
+    height: 50px;
 }
